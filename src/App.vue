@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div id="welcome-text">Welcome to AniGa's wedding page!</div>
 </template>
 
 <script>
