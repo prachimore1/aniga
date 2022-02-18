@@ -1,9 +1,13 @@
 <template>
-  <div id="welcome-text">Welcome to AniGa's wedding page!</div>
+  <Welcome/>
 </template>
 
 <script>
+import WelcomeHeader from "./components/Welcome-header";
 export default {
   name: "App",
+  components: {
+    WelcomeHeader
+  }
 };
 </script>
