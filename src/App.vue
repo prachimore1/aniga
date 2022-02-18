@@ -1,5 +1,5 @@
 <template>
-  <Welcome/>
+  <WelcomeHeader/>
 </template>
 
 <script>
