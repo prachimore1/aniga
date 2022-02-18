@@ -2,11 +2,14 @@
   "name": "aniga",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://prachimore1.github.io/aniga.github.io",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -28,6 +31,7 @@
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "babel-jest": "^27.0.6",
     "eslint-plugin-vue": "^8.0.3",
+    "gh-pages": "^3.2.3",
     "jest": "^27.0.5",
     "sass": "^1.38.0",
     "sass-loader": "^10.0.0",
