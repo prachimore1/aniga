@@ -6,7 +6,9 @@
 import json from "../assets/welcomeText.json";
 
 export default {
-  name: "Welcome",
-  data: function () { return json }
+  name: "Welcome-header",
+  data: function () {
+    return json;
+  },
 };
 </script>

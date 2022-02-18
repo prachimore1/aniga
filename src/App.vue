@@ -7,7 +7,7 @@ import WelcomeHeader from "./components/Welcome-header";
 export default {
   name: "App",
   components: {
-    WelcomeHeader
-  }
+    WelcomeHeader,
+  },
 };
 </script>
