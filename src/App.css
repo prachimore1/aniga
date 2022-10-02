@@ -50,20 +50,19 @@ html {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     perspective: 1000px;
-    /*perspective-origin: 50% 35%;*/
+    perspective-origin: 50% 35%;
     /*background-image: url("logo.svg");*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: fixed;
-    /*height: 100vh;*/
-    /*width: 100vw;*/
+    height: 100vh;
+    width: 100vw;
 }
 video {
     position: fixed;
     z-index: -1;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
 }
 .App {
     transform-style: preserve-3d;
