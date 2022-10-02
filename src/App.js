@@ -1,47 +1,54 @@
-import logo from './marigold.png';
 import './App.css';
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import video from "./Background.mp4";
+
 function App() {
-  return (
-    <div className="App">
-        {/*<img src={logo} className="logo App-logo1" alt="logo"/>*/}
-        {/*<img src={logo} className="logo App-logo2"  alt="logo"/>*/}
-        {/*<img src={logo} className="logo App-logo3"  alt="logo"/>*/}
-        {/*<img src={logo} className="logo App-logo4"  alt="logo"/>*/}
-        {/*<div className="imgBackground">*/}
-        {/*    /!*<img className="slideImage" src="https://daks2k3a4ib2z.cloudfront.net/5774d31fd2e5f9b80c2ab39f/5774dbfea8dfa30f2163e0d6_3.jpg" alt="image1"/>*!/*/}
-        {/*</div>*/}
-        <button className="viewButton">View</button>
-        {/*<div className="swiperDiv">*/}
-        {/*    <Swiper*/}
-        {/*        // install Swiper modules*/}
-        {/*        modules={[Navigation, Pagination, Scrollbar, A11y]}*/}
-        {/*        spaceBetween={50}*/}
-        {/*        slidesPerView={3}*/}
-        {/*        navigation*/}
-        {/*        pagination={{ clickable: true }}*/}
-        {/*        scrollbar={{ draggable: true }}*/}
-        {/*        onSwiper={(swiper) => console.log(swiper)}*/}
-        {/*        onSlideChange={() => console.log('slide change')}*/}
-        {/*    >*/}
-        {/*        <SwiperSlide>Slide 1</SwiperSlide>*/}
-        {/*        <SwiperSlide>Slide 2</SwiperSlide>*/}
-        {/*        <SwiperSlide>Slide 3</SwiperSlide>*/}
-        {/*        <SwiperSlide>Slide 4</SwiperSlide>*/}
-        {/*        ...*/}
-        {/*    </Swiper>*/}
-        {/*</div>*/}
-    </div>
-  );
+    return (
+        <div className="App">
+            <video autoPlay muted loop>
+                <source src={video} type="video/mp4"/>
+            </video>
+            <div className="overlay"/>
+            <div className="background">
+                <section className="content one">
+                    <h1>Section 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+
+                <section className="content">
+                    <button className="viewButton">View</button>
+                </section>
+
+                <section className="content">
+                    <p className="room-content">Section 3</p>
+                </section>
+
+                <section className="content">
+                    <p className="room-content">Section 4</p>
+                </section>
+
+                <section className="content">
+                    <p className="room-content">Section 5</p>
+                </section>
+
+                <section className="content">
+                    <p className="room-content">Section 6</p>
+                </section>
+
+                <section className="content">
+                    <p className="room-content">Section 7</p>
+                </section>
+            </div>
+        </div>
+    );
 }
 
 export default App;

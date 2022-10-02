@@ -1,78 +1,81 @@
-.App {
-    text-align: center;
-    --mix-num: 2;
-    --angle: 145deg;
+
+.viewButton {
+    position:absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    height: 80px;
+    width: 200px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s all ease;
     background: #e09bb1;
+    box-shadow:  20px 20px 60px #986978,
+    -20px -20px 60px #ffcdea;
 }
 
-body > #root > div {
+.one {
+    /*background: #e09bb1;*/
+    text-align: center;
+}
+
+.room-content {
+    max-width: 280px;
+    text-align: center;
+}
+
+:root {
+    --depth: 500px;
+    --turnLeft: 0.06turn;
+    --turnRight: -0.06turn;
+    --turn: var(--turnRight);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    perspective: 1000px;
+    /*perspective-origin: 50% 35%;*/
+    /*background-image: url("logo.svg");*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    position: fixed;
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+}
+video {
+    position: fixed;
+    z-index: -1;
+    width: 100vh;
     height: 100vh;
 }
-
-.logo {
-    height: 15vmin;
-    pointer-events: none;
+.App {
+    transform-style: preserve-3d;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo1 {
-        animation: drop calc(0.92s * var(--mix-num)) ease-in forwards;
-    }
-    .App-logo2 {
-        animation: drop calc(0.79s * var(--mix-num)) ease-in forwards;
-    }
-    .App-logo3 {
-        animation: drop calc(0.85s * var(--mix-num)) ease-in forwards;
-    }
-    .App-logo4 {
-        animation: drop calc(0.81s * var(--mix-num)) ease-in forwards;
-    }
+.fixedFrame {
 
 }
-
-@keyframes drop {
-    0% {
-        opacity: 0
-    }
-
-    70% {
-        transform: translateY(91vh)
-    }
-    80% {transform: translateY(89vh);}
-    100% {transform: translateY(91vh);}
-}
-
-.slideImage {
-    width: 250px;
-    height: 200px;
-    opacity: 1;
-    transform: scaleX(1) scaleY(1) scaleZ(1);
-    transition: opacity 500ms ease 0s, transform 500ms ease 0s;
-    border-radius: 50px;
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  20px 20px 26px #bebebe, -20px -20px 26px #ffffff;
-}
-.viewButton {
-    margin-top: 82vh;
-    height: 100px;
-    width: 250px;
-    border-radius: 50px;
-    background: #e09bb1;
-    box-shadow:  20px 20px 60px #be8496,
-    -20px -20px 60px #ffb2cc;
-}
-/*button:hover {*/
-/*    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),*/
-/*    -2px -2px 4px rgba(255, 255, 255, .4),*/
-/*    2px 2px 2px rgba(255, 255, 255, .05),*/
-/*    2px 2px 4px rgba(0, 0, 0, .1);*/
-/*}*/
-/*button:active {*/
-/*    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),*/
-/*    inset -2px -2px 4px rgba(255, 255, 255, .5),*/
-/*    inset 2px 2px 2px rgba(255, 255, 255, .075),*/
-/*    inset 2px 2px 4px rgba(0, 0, 0, .15);*/
-/*}*/
-.swiperDiv {
-margin-top: 30px;
+.content {
+    position: relative;
+    /*border: 4vh solid hsl(0 0% 10%);*/
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    transform-style: preserve-3d;
 }
