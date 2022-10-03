@@ -48,9 +48,18 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <video className={this.state.textDisplay ? 'hide' : ''} autoPlay muted onEnded={this.transitionContext}>
-                    <source src={videoCover} type="video/mp4"/>
-                </video>
+                <div id="cover" className={this.state.textDisplay ? 'hide' : ''}>
+                    <video autoPlay muted
+                           className={this.state.textDisplay ? 'hide' : ''}
+                           onEnded={this.transitionContext}>
+                        <source src={videoCover} type="video/mp4"/>
+                    </video>
+                    <div className={this.state.textDisplay ? 'hide background2' : 'background2'} >
+                        <section className="content">
+                            <h1>Introduction</h1>
+                        </section>
+                    </div>
+                </div>
                 {this.state.textDisplay &&
                     <>
                         <video autoPlay muted loop className="droneVideo"
