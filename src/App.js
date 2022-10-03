@@ -38,18 +38,17 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {textDisplay: false};
+        this.transitionContext = this.transitionContext.bind(this);
     }
 
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState({textDisplay: true});
-        }, 3000);
+    transitionContext() {
+        this.setState({textDisplay: true});
     }
 
     render() {
         return (
             <div className="App">
-                <video className={this.state.textDisplay ? 'hide' : ''} autoPlay muted loop>
+                <video className={this.state.textDisplay ? 'hide' : ''} autoPlay muted onEnded={this.transitionContext}>
                     <source src={videoCover} type="video/mp4"/>
                 </video>
                 {this.state.textDisplay &&
