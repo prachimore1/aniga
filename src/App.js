@@ -4,7 +4,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import video from "./Background.mp4";
+import videoCover from "./Cover.mp4";
+import videoBackground from "./BackgroundDroneVideo.mp4";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -40,24 +41,26 @@ class App extends React.Component {
 
     componentDidMount() {
         setTimeout(() => {
-            this.setState({textDisplay: true})
-
+            this.setState({textDisplay: true});
         }, 3000);
     }
 
     render() {
         return (
             <div className="App">
-                    <video autoPlay muted loop >
-                        <source src={video} type="video/mp4"/>
+                    <video className={this.state.textDisplay ? 'hide' : ''} autoPlay muted loop >
+                        <source src={videoCover} type="video/mp4"/>
                     </video>
                 {this.state.textDisplay &&
                     <div className="background"
                          data-aos="slide-up"
                          data-aos-offset="200"
                          data-aos-duration="2000"
-                         data-aos-easing="ease-in-out"
+                         data-aos-anchor-placement="top-bottom"
                     >
+                        <video autoPlay muted loop className="droneVideo">
+                            <source src={videoBackground} type="video/mp4"/>
+                        </video>
                         <section className="content one">
                             <h1>Section 1</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
