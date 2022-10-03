@@ -52,11 +52,10 @@ html {
     perspective: 1000px;
     perspective-origin: 50% 35%;
     /*background-image: url("logo.svg");*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*position: fixed;*/
-    /*margin-top: 10vh;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
     height: 100vh;
     width: 100vw;
 }
@@ -69,18 +68,7 @@ video {
 .App {
     transform-style: preserve-3d;
 }
-.droneVideo {
-    /* TODO: Drone video needs to apply as background to all sections */
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    perspective: 1000px;
-    perspective-origin: 50% 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-}
+
 .content {
     position: relative;
     border-bottom: 2vh solid ;

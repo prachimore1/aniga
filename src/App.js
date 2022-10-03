@@ -32,6 +32,7 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
 class App extends React.Component {
 
     constructor(props) {
@@ -48,56 +49,66 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                    <video className={this.state.textDisplay ? 'hide' : ''} autoPlay muted loop >
-                        <source src={videoCover} type="video/mp4"/>
-                    </video>
+                <video className={this.state.textDisplay ? 'hide' : ''} autoPlay muted loop>
+                    <source src={videoCover} type="video/mp4"/>
+                </video>
                 {this.state.textDisplay &&
-                    <div className="background"
-                         data-aos="slide-up"
-                         data-aos-offset="200"
-                         data-aos-duration="2000"
-                         data-aos-anchor-placement="top-bottom"
-                    >
-                        <video autoPlay muted loop className="droneVideo">
+                    <>
+                        <video autoPlay muted loop className="droneVideo"
+                               data-aos="slide-up"
+                               data-aos-offset="200"
+                               data-aos-duration="2000"
+                               data-aos-anchor-placement="top-bottom"
+                        >
                             <source src={videoBackground} type="video/mp4"/>
                         </video>
-                        <section className="content one">
-                            <h1>Section 1</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </section>
+                        <div className="background"
+                             data-aos="slide-up"
+                             data-aos-offset="200"
+                             data-aos-duration="2000"
+                             data-aos-anchor-placement="top-bottom"
+                        >
 
-                        <section className="content">
-                            <button className="viewButton">View</button>
-                        </section>
+                            <section className="content one">
+                                <h1>Section 1</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit
+                                    in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat
+                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </section>
 
-                        <section className="content">
-                            <p className="room-content">Section 3</p>
-                        </section>
+                            <section className="content">
+                                <button className="viewButton">View</button>
+                            </section>
 
-                        <section className="content">
-                            <p className="room-content">Section 4</p>
-                        </section>
+                            <section className="content">
+                                <p className="room-content">Section 3</p>
+                            </section>
 
-                        <section className="content">
-                            <p className="room-content">Section 5</p>
-                        </section>
+                            <section className="content">
+                                <p className="room-content">Section 4</p>
+                            </section>
 
-                        <section className="content">
-                            <p className="room-content">Section 6</p>
-                        </section>
+                            <section className="content">
+                                <p className="room-content">Section 5</p>
+                            </section>
 
-                        <section className="content">
-                            <p className="room-content">Section 7</p>
-                        </section>
-                    </div>
+                            <section className="content">
+                                <p className="room-content">Section 6</p>
+                            </section>
+
+                            <section className="content">
+                                <p className="room-content">Section 7</p>
+                            </section>
+                        </div>
+                    </>
                 }
             </div>
         );
