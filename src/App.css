@@ -12,8 +12,8 @@
     border: none;
     transition: 0.3s all ease;
     background: #e09bb1;
-    box-shadow:  20px 20px 60px #986978,
-    -20px -20px 60px #ffcdea;
+    box-shadow:  9px 9px 18px #af798a,
+    -9px -9px 18px #ffbdd8;
 }
 
 .one {
@@ -62,7 +62,7 @@ html {
 video {
     position: fixed;
     /*z-index: -1;*/
-    width: 100vw;
+    /*width: 100vw;*/
     height: 100vh;
 }
 .App {
@@ -71,10 +71,10 @@ video {
 
 .content {
     position: relative;
-    border-bottom: 2vh solid ;
-    border-top: 2vh solid ;
-    border-left: 2vw solid;
-    border-right: 2vw solid;
+    /*border-bottom: 2vh solid ;*/
+    /*border-top: 2vh solid ;*/
+    /*border-left: 2vw solid;*/
+    /*border-right: 2vw solid;*/
     height: 96vh;
     width: 96vw;
     scroll-snap-align: center;
@@ -83,7 +83,7 @@ video {
 
 .hide {
     /* TODO: Needs smooth transition */
-    max-height: 0%;
+    max-height: 0;
     transition: 1s;
     overflow: hidden;
 }
