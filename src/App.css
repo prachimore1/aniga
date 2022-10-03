@@ -45,10 +45,11 @@ video {
     /*border-right: 2vw solid;*/
     text-align: center;
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
     scroll-snap-align: center;
     transform-style: preserve-3d;
-    top: 10vh;
+    padding-top: 10vh;
 }
 
 .viewButton {

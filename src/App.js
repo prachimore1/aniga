@@ -49,7 +49,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 <div id="cover" className={this.state.textDisplay ? 'hide' : ''}>
-                    <video autoPlay muted
+                    <video playsInline autoPlay muted
                            className={this.state.textDisplay ? 'hide' : ''}
                            onEnded={this.transitionContext}>
                         <source src={videoCover} type="video/mp4"/>
@@ -62,7 +62,7 @@ class App extends React.Component {
                 </div>
                 {this.state.textDisplay &&
                     <>
-                        <video autoPlay muted loop className="droneVideo"
+                        <video playsInline autoPlay muted loop className="droneVideo"
                                data-aos="slide-up"
                                data-aos-offset="200"
                                data-aos-duration="2000"
