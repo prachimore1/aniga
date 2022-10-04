@@ -8,15 +8,15 @@ html {
     overflow: hidden;
 }
 
-.background {
+.foreground {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     perspective: 1000px;
     /*perspective-origin: 50% 35%;*/
     /*background-image: url("logo.svg");*/
-    background-position: center center;
+    /*background-position: center center;*/
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
     position: fixed;
     height: 100vh;
     height: 100dvh;
@@ -39,19 +39,22 @@ video {
     /*top:50%;*/
     /*height: auto   !important;*/
 }
-.backImage {
-    position: fixed;
+.background * {
+    position: absolute;
     /*z-index: -1;*/
-    width: 100vw;
+    /*width: 100vw;*/
     width: 100dvw;
-    height: 100vh;
-    height: 100dvh;
+    height: 30vh;
+    /*height: 100dvh;*/
     object-fit: contain;
-    max-width: 100vh;
-    max-width: 100dvh;
+    /*max-width: 100vh;*/
+    /*max-width: 100dvh;*/
     max-height: 100vh;
     max-height: 100dvh;
-    margin: auto;
+    /*margin: auto;*/
+}
+.thoran {
+    top: 0;
 }
 .invite {
     /*display: grid;*/
