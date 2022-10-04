@@ -53,8 +53,20 @@ video {
     max-height: 100dvh;
     /*margin: auto;*/
 }
-.thoran {
-    top: 0;
+.mala1 {
+    margin-top: -5vh;
+    margin-left: -32vw;
+    height: 22vh;
+}
+.mala2 {
+    margin-top: -5vh;
+    margin-left: 5vw;
+    height: 22vh;
+}
+.mala3 {
+    margin-top: -6vh;
+    margin-left: 38vw;
+    height: 22vh;
 }
 .invite {
     /*display: grid;*/

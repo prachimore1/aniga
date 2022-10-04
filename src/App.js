@@ -4,10 +4,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import videoCover from "./Cover.mp4";
+import videoCover from "./videos/Cover.mp4";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import thoran from "./thoran.png";
+// import thoran from "./images/thoran.png";
+import mala1 from "./images/elements/mala1.png";
+import mala2 from "./images/elements/mala2.png";
+import mala3 from "./images/elements/mala3.png";
 
 AOS.init();
 AOS.init({
@@ -77,7 +80,9 @@ function Invite() {
                  data-aos-duration="2000"
                  data-aos-anchor-placement="top-bottom"
             >
-                <img src={thoran} alt="logo" className="thoran"/>
+                <img src={mala1} alt="logo" className="mala1"/>
+                <img src={mala2} alt="logo" className="mala2"/>
+                <img src={mala3} alt="logo" className="mala3"/>
             </div>
             <div className="foreground"
                  data-aos="slide-up"

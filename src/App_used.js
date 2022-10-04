@@ -1,4 +1,4 @@
-import logo from './marigold.png';
+import logo from './images/marigold.png';
 import './App.css';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
