@@ -61,7 +61,7 @@ class App extends React.Component {
                     </div>
                 </div>
                 {this.state.textDisplay &&
-                    <>
+                    <div className="invite">
                         <img src={logo} className="backImage" alt="logo"
                              data-aos="slide-up"
                              data-aos-offset="200"
@@ -114,7 +114,7 @@ class App extends React.Component {
                                 <p className="room-content">Section 7</p>
                             </section>
                         </div>
-                    </>
+                    </div>
                 }
             </div>
         );
