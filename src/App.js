@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import videoCover from "./Cover.mp4";
-import videoBackground from "./BackgroundDroneVideo.mp4";
+import logo from "./logo.svg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -54,7 +54,7 @@ class App extends React.Component {
                            onEnded={this.transitionContext}>
                         <source src={videoCover} type="video/mp4"/>
                     </video>
-                    <div className={this.state.textDisplay ? 'hide background2' : 'background2'} >
+                    <div className={this.state.textDisplay ? 'hide background2' : 'background2'}>
                         <section className="content">
                             <h1>Introduction</h1>
                         </section>
@@ -62,14 +62,12 @@ class App extends React.Component {
                 </div>
                 {this.state.textDisplay &&
                     <>
-                        <video playsInline autoPlay muted loop className="droneVideo"
-                               data-aos="slide-up"
-                               data-aos-offset="200"
-                               data-aos-duration="2000"
-                               data-aos-anchor-placement="top-bottom"
-                        >
-                            <source src={videoBackground} type="video/mp4"/>
-                        </video>
+                        <img src={logo} className="backImage" alt="logo"
+                             data-aos="slide-up"
+                             data-aos-offset="200"
+                             data-aos-duration="2000"
+                             data-aos-anchor-placement="top-bottom"
+                        />
                         <div className="background"
                              data-aos="slide-up"
                              data-aos-offset="200"
