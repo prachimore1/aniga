@@ -67,19 +67,26 @@ video {
     max-height: 100dvh;
     /*margin: auto;*/
     display: flex;
+    overflow-x: hidden;
+    width: 100%;
     /*justify-content: space-between;*/
 }
-.mala1 {
-    margin-left: -20vw;
-    margin-top: -6vh;
+
+@keyframes sway {
+    0%   {transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%);}
+    5%   {transform: translateX(0.2px) translateY(0px) scaleX(100%) scaleY(100.2%);}
+    10%   {transform: translateX(0.4px) translateY(0px) scaleX(100%) scaleY(100.4%);}
+    15%   {transform: translateX(0.6px) translateY(0px) scaleX(100%) scaleY(100.6%);}
+    20%   {transform: translateX(0.8px) translateY(0px) scaleX(100%) scaleY(100.8%);}
+    25%  {transform: translateX(1px) translateY(-1px) scaleX(100%) scaleY(101%)}
+    50%  {transform: translateX(0px) translateY(0px) scaleX(101%) scaleY(100%)}
+    75%  {transform: translateX(-1px) translateY(1px) scaleX(100%) scaleY(101%)}
+    100% {transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%);}
 }
-.mala2 {
-    margin-left: -102px;
-    margin-top: -46px;
-}
+
 .mala {
-    height: 25vh;
-    width: 65vw;
+    /*height: 25vh;*/
+    /*width: 65vw;*/
     /*width: 50%;*/
     /*position: fixed;*/
     /*z-index: 1;*/
@@ -88,6 +95,13 @@ video {
     /*padding-top: 20px;*/
     /*width: 100%;*/
     float: left;
+    height: 32vw;
+    width: 40vw;
+    aspect-ratio: 1 / 1;
+    margin-left: -5vw;
+    animation-name: sway;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 
