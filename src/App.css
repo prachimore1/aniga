@@ -39,35 +39,58 @@ video {
     /*top:50%;*/
     /*height: auto   !important;*/
 }
-.background * {
+
+.image-section {
+    /*flex-basis: calc(100% / 3);*/
+    flex-grow: 1;
+    /*height: 100vh;*/
+    overflow: hidden;
+    position: relative;
+    /*transition: transform 1s;*/
+    /*   backface-visibility: hidden; */
+    display: flex;
+    flex-basis: auto;
+}
+
+
+.background {
     position: absolute;
     /*z-index: -1;*/
     /*width: 100vw;*/
-    width: 100dvw;
-    height: 30vh;
+    /*width: 100dvw;*/
+    height: 25vh;
     /*height: 100dvh;*/
     object-fit: contain;
-    /*max-width: 100vh;*/
-    /*max-width: 100dvh;*/
+    max-width: 100vh;
+    max-width: 100dvh;
     max-height: 100vh;
     max-height: 100dvh;
     /*margin: auto;*/
+    display: flex;
+    /*justify-content: space-between;*/
 }
 .mala1 {
-    margin-top: -5vh;
-    margin-left: -32vw;
-    height: 22vh;
+    margin-left: -20vw;
+    margin-top: -6vh;
 }
 .mala2 {
-    margin-top: -5vh;
-    margin-left: 5vw;
-    height: 22vh;
+    margin-left: -102px;
+    margin-top: -46px;
 }
-.mala3 {
-    margin-top: -6vh;
-    margin-left: 38vw;
-    height: 22vh;
+.mala {
+    height: 25vh;
+    width: 65vw;
+    /*width: 50%;*/
+    /*position: fixed;*/
+    /*z-index: 1;*/
+    top: 0;
+    /*overflow-y: hidden;*/
+    /*padding-top: 20px;*/
+    /*width: 100%;*/
+    float: left;
 }
+
+
 .invite {
     /*display: grid;*/
     /*height: 100%;*/

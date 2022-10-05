@@ -80,9 +80,9 @@ function Invite() {
                  data-aos-duration="2000"
                  data-aos-anchor-placement="top-bottom"
             >
-                <img src={mala1} alt="logo" className="mala1"/>
-                <img src={mala2} alt="logo" className="mala2"/>
-                <img src={mala3} alt="logo" className="mala3"/>
+                <img src={mala1} alt="" className="mala mala1"/>
+                <img src={mala2} alt="" className="mala mala2"/>
+                {/*<img src={mala3} alt="" className="mala mala3"/>*/}
             </div>
             <div className="foreground"
                  data-aos="slide-up"
@@ -133,4 +133,5 @@ function Invite() {
         </div>
     );
 }
+
 export default App;
