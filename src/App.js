@@ -60,7 +60,7 @@ class App extends React.Component {
                            onEnded={this.transitionContext}>
                         <source src={videoCover} type="video/mp4"/>
                     </video>
-                    <div className={this.state.textDisplay ? 'hide background2' : 'background2'}>
+                    <div className={this.state.textDisplay ? 'hide coverBackground' : 'coverBackground'}>
                         <section className="content">
                             <h1>Introduction</h1>
                         </section>
@@ -88,7 +88,7 @@ function Invite() {
                     <img src={mala2} alt="" className="mala mala2"/>
                     <img src={mala3} alt="" className="mala mala3"/>
                 </div>
-                <div className="background layer3"
+                <div className="background layer2"
                      data-aos="fade-in"
                      data-aos-easing="ease-in"
                     // data-aos-anchor-placement="top-bottom"
@@ -98,7 +98,7 @@ function Invite() {
                     <img src={bell} alt="" className="bell bell1"/>
                     <img src={bell} alt="" className="bell bell2"/>
                 </div>
-                <div className="background layer2"
+                <div className="background layer3"
                      data-aos="fade-in"
                      data-aos-easing="ease-in"
                      // data-aos-anchor-placement="top-bottom"

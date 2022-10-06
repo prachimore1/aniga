@@ -25,7 +25,7 @@ html {
     position: absolute;
     height: 19vw;
 }
-.background2 {
+.coverBackground {
     position: fixed;
     text-align: center;
 }
@@ -62,10 +62,32 @@ video {
     margin-top: -4px;
 }
 
-.layer2 {
-    height: 24vw;
+.mala {
+    top: 0;
+    float: left;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-left: -5vw;
+    animation: malaSway 1s ease-in-out infinite alternate;
 }
-.layer3 {
+
+.mala1 { animation-duration: 3.75s; }
+.mala2 { animation-duration: 2.5s; }
+.mala3 { animation-duration: 3s; }
+
+.layer3 { height: 24vw; }
+
+.hangingFlower {
+    padding-left: 24vw;
+    animation: flowersSway 1s ease-in-out infinite alternate;
+    margin-top: -8px;
+}
+
+.hF1 { animation-duration: 2s; }
+.hF2 { animation-duration: 1.5s; }
+
+.layer2 {
     padding-top: 22vw;
 }
 .bell {
@@ -76,40 +98,6 @@ video {
 .bell1 { animation-duration: 2s; }
 .bell2 { animation-duration: 1.5s; }
 
-.mala {
-    top: 0;
-    float: left;
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    margin-left: -5vw;
-    animation: malaSway 1s ease-in-out infinite alternate;
-}
-@keyframes malaSway{
-    from{transform:translateX(-4px) rotate(0.5deg);}
-    to{transform:translateX(4px) rotate(-0.5deg);}
-}
-.mala1 {
-    animation-duration: 3.75s
-}
-.mala2 {
-    animation-duration: 2.5s
-}
-.mala3 {
-    animation-duration: 3s
-}
-.hangingFlower {
-    padding-left: 24vw;
-    animation: flowersSway 1s ease-in-out infinite alternate;
-    margin-top: -8px;
-}
-
-.hF1 { animation-duration: 2s; }
-.hF2 { animation-duration: 1.5s; }
-@keyframes flowersSway{
-    from{transform: rotate(2deg); transform-origin: top center;}
-    to{transform:  rotate(-2deg); transform-origin: top center;}
-}
 .content {
     position: relative;
     text-align: center;
@@ -147,6 +135,16 @@ video {
     animation-duration:2s;
     animation-fill-mode: forwards; /* added */
     display: block;
+}
+
+@keyframes malaSway{
+    from{transform:translateX(-4px) rotate(0.5deg);}
+    to{transform:translateX(4px) rotate(-0.5deg);}
+}
+
+@keyframes flowersSway{
+    from{transform: rotate(2deg); transform-origin: top center;}
+    to{transform:  rotate(-2deg); transform-origin: top center;}
 }
 
 @keyframes fadeOut {
