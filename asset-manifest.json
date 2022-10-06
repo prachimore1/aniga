@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aniga/static/css/main.670e8893.css",
-    "main.js": "/aniga/static/js/main.166a0f4b.js",
+    "main.js": "/aniga/static/js/main.77c0dc71.js",
     "static/js/787.0d062425.chunk.js": "/aniga/static/js/787.0d062425.chunk.js",
     "static/media/Cover.mp4": "/aniga/static/media/Cover.3956121ec9347bf3a98d.mp4",
     "static/media/mala1.png": "/aniga/static/media/mala1.e804c7b1fbbfe210a750.png",
@@ -11,11 +11,11 @@
     "static/media/hangingFlower2.png": "/aniga/static/media/hangingFlower2.b2cf83a9e9efc8d55ecd.png",
     "index.html": "/aniga/index.html",
     "main.670e8893.css.map": "/aniga/static/css/main.670e8893.css.map",
-    "main.166a0f4b.js.map": "/aniga/static/js/main.166a0f4b.js.map",
+    "main.77c0dc71.js.map": "/aniga/static/js/main.77c0dc71.js.map",
     "787.0d062425.chunk.js.map": "/aniga/static/js/787.0d062425.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.670e8893.css",
-    "static/js/main.166a0f4b.js"
+    "static/js/main.77c0dc71.js"
   ]
 }
