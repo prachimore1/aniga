@@ -11,6 +11,8 @@ import 'aos/dist/aos.css';
 import mala1 from "./images/elements/mala1.png";
 import mala2 from "./images/elements/mala2.png";
 import mala3 from "./images/elements/mala3.png";
+import hangingFlower1 from "./images/elements/hangingFlower1.png";
+import hangingFlower2 from "./images/elements/hangingFlower2.png";
 
 AOS.init();
 AOS.init({
@@ -74,16 +76,25 @@ class App extends React.Component {
 function Invite() {
     return (
         <div className="invite">
-            <div className="background"
-                 data-aos="slide-up"
-                 data-aos-offset="200"
-                 data-aos-duration="2000"
-                 data-aos-anchor-placement="top-bottom"
-            >
-                <img src={mala1} alt="" className="mala mala1"/>
-                <img src={mala2} alt="" className="mala mala2"/>
-                <img src={mala3} alt="" className="mala mala3"/>
-                {/*<img src={mala3} alt="" className="mala mala3"/>*/}
+            <div>
+                <div className="background"
+                     data-aos="slide-up"
+                     data-aos-offset="200"
+                     data-aos-duration="2000"
+                     data-aos-anchor-placement="top-bottom"
+                >
+                    <img src={mala1} alt="" className="mala mala1"/>
+                    <img src={mala2} alt="" className="mala mala2"/>
+                    <img src={mala3} alt="" className="mala mala3"/>
+                </div>
+                <div className="background layer2"
+                     data-aos="slide-up"
+                     data-aos-offset="200"
+                     data-aos-duration="2000"
+                     data-aos-anchor-placement="top-bottom">
+                    <img src={hangingFlower1} alt="" className="hangingFlower"/>
+                    <img src={hangingFlower2} alt="" className="hangingFlower"/>
+                </div>
             </div>
             <div className="foreground"
                  data-aos="slide-up"

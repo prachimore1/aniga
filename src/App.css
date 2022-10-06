@@ -58,7 +58,7 @@ video {
     /*z-index: -1;*/
     width: 100vw;
     width: 100dvw;
-    height: 9vh;
+    height: 19vw;
     /*height: 100dvh;*/
     object-fit: contain;
     max-width: 100vh;
@@ -69,8 +69,12 @@ video {
     display: flex;
     overflow-x: hidden;
     width: 100%;
-    justify-content: space-between;
-    margin-top: -15px;
+    /*justify-content: space-between;*/
+    margin-top: -4px;
+}
+
+.layer2 {
+    height: 24vw;
 }
 
 /*@keyframes sway {*/
@@ -118,11 +122,14 @@ video {
     /*animation-duration: 4s;*/
     /*animation-iteration-count: infinite;*/
     /*animation: sway 4s steps(20) infinite alternate;*/
-    animation: sway2 1s ease-in infinite alternate;
+    animation: sway2 1s ease-in-out infinite alternate;
+}
+.hangingFlower {
+    padding-left: 24vw;
 }
 @keyframes sway2{
-    from{transform:translateX(-4px) rotate(1deg);}
-    to{transform:translateX(4px) rotate(-1deg);}
+    from{transform:translateX(-4px) rotate(0.5deg);}
+    to{transform:translateX(4px) rotate(-0.5deg);}
 }
 .mala1 {
     animation-duration: 1.5s
