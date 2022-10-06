@@ -22,7 +22,13 @@ html {
     height: 100dvh;
     width: 100vw;
 }
-
+.animatedBackground {
+    width: 100vw;
+    width: 100dvw;
+    display: flex;
+    position: absolute;
+    height: 19vw;
+}
 .background2 {
     position: fixed;
     text-align: center;
@@ -58,17 +64,16 @@ video {
     /*z-index: -1;*/
     width: 100vw;
     width: 100dvw;
-    height: 19vw;
+    /*height: 19vw;*/
     /*height: 100dvh;*/
     object-fit: contain;
-    max-width: 100vh;
-    max-width: 100dvh;
     max-height: 100vh;
     max-height: 100dvh;
     /*margin: auto;*/
     display: flex;
     overflow-x: hidden;
     width: 100%;
+    height: 100%;
     /*justify-content: space-between;*/
     margin-top: -4px;
 }

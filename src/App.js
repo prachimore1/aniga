@@ -76,7 +76,7 @@ class App extends React.Component {
 function Invite() {
     return (
         <div className="invite">
-            <div>
+            <div className="animatedBackground">
                 <div className="background"
                      data-aos="slide-up"
                      data-aos-offset="200"
