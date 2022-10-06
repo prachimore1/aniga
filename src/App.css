@@ -12,11 +12,7 @@ html {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     perspective: 1000px;
-    /*perspective-origin: 50% 35%;*/
-    /*background-image: url("logo.svg");*/
-    /*background-position: center center;*/
     background-repeat: no-repeat;
-    /*background-size: cover;*/
     position: fixed;
     height: 100vh;
     height: 100dvh;
@@ -36,24 +32,16 @@ html {
 
 video {
     position: fixed;
-    /*z-index: -1;*/
-    /*width: 100vw;*/
     height: 100vh;
     height: 100dvh;
     object-fit: cover;
     max-width: 100%;
-    /*top:50%;*/
-    /*height: auto   !important;*/
 }
 
 .image-section {
-    /*flex-basis: calc(100% / 3);*/
     flex-grow: 1;
-    /*height: 100vh;*/
     overflow: hidden;
     position: relative;
-    /*transition: transform 1s;*/
-    /*   backface-visibility: hidden; */
     display: flex;
     flex-basis: auto;
 }
@@ -61,15 +49,11 @@ video {
 
 .background {
     position: absolute;
-    /*z-index: -1;*/
     width: 100vw;
     width: 100dvw;
-    /*height: 19vw;*/
-    /*height: 100dvh;*/
     object-fit: contain;
     max-height: 100vh;
     max-height: 100dvh;
-    /*margin: auto;*/
     display: flex;
     overflow-x: hidden;
     width: 100%;
@@ -81,55 +65,27 @@ video {
 .layer2 {
     height: 24vw;
 }
-
-/*@keyframes sway {*/
-/*    from {*/
-/*        transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%) rotateX(0deg);*/
-/*    }*/
-/*    25%  {*/
-/*        transform: translateX(1px) translateY(-1px) scaleX(100%) scaleY(101%) rotateX(5deg)*/
-/*    }*/
-/*    50%  {*/
-/*        transform: translateX(0px) translateY(0px) scaleX(101%) scaleY(100%)*/
-/*    }*/
-/*    75%  {*/
-/*        transform: translateX(-1px) translateY(1px) scaleX(100%) scaleY(101%)*/
-/*    }*/
-/*    to {*/
-/*        transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%)*/
-/*    }*/
-/*    !*0%   {transform: translate(0px ,0px) scaleX(100%) scaleY(100%) rotateX(0deg);}*!*/
-/*    !*5%   {transform: translate(0.2px ,0px) scaleX(100%) scaleY(100.2%) rotateX(1deg);}*!*/
-/*    !*10%   {transform: translate(0.4px ,0px) scaleX(100%) scaleY(100.4%) rotateX(2deg);}*!*/
-/*    !*15%   {transform: translate(0.6px ,0px) scaleX(100%) scaleY(100.6%) rotateX(3deg);}*!*/
-/*    !*20%   {transform: translate(0.8px ,0px) scaleX(100%) scaleY(100.8%) rotateX(4deg);}*!*/
-/*    !*25%  {transform: translate(1px ,-1px) scaleX(100%) scaleY(101%) rotateX(5deg)}*!*/
-/*    !*75%  {transform: translate(-1px ,1px) scaleX(100%) scaleY(101%)}*!*/
-/*    !*100% {transform: translate(0px ,0px) scaleX(100%) scaleY(100%);}*!*/
-/*}*/
+.layer3 {
+    padding-top: 22vw;
+}
+.bell {
+    height: 10vw;
+    padding-left: 26vw;
+    animation: malaSway 1s ease-in-out infinite alternate;
+}
+.bell1 { animation-duration: 2s; }
+.bell2 { animation-duration: 1.5s; }
 
 .mala {
-    /*height: 25vh;*/
-    /*width: 65vw;*/
-    /*width: 50%;*/
-    /*position: fixed;*/
-    /*z-index: 1;*/
     top: 0;
-    /*overflow-y: hidden;*/
-    /*padding-top: 20px;*/
-    /*width: 100%;*/
     float: left;
     height: 100%;
     width: 100%;
     aspect-ratio: 1 / 1;
     margin-left: -5vw;
-    /*animation-name: sway;*/
-    /*animation-duration: 4s;*/
-    /*animation-iteration-count: infinite;*/
-    /*animation: sway 4s steps(20) infinite alternate;*/
-    animation: sway2 1s ease-in-out infinite alternate;
+    animation: malaSway 1s ease-in-out infinite alternate;
 }
-@keyframes sway2{
+@keyframes malaSway{
     from{transform:translateX(-4px) rotate(0.5deg);}
     to{transform:translateX(4px) rotate(-0.5deg);}
 }
@@ -144,26 +100,18 @@ video {
 }
 .hangingFlower {
     padding-left: 24vw;
-    animation: sway3 1s ease-in-out infinite alternate;
+    animation: flowersSway 1s ease-in-out infinite alternate;
     margin-top: -8px;
 }
 
 .hF1 { animation-duration: 2s; }
 .hF2 { animation-duration: 1.5s; }
-@keyframes sway3{
+@keyframes flowersSway{
     from{transform: rotate(2deg); transform-origin: top center;}
     to{transform:  rotate(-2deg); transform-origin: top center;}
 }
-.invite {
-    /*display: grid;*/
-    /*height: 100%;*/
-}
 .content {
     position: relative;
-    /*border-bottom: 2vh solid ;*/
-    /*border-top: 2vh solid ;*/
-    /*border-left: 2vw solid;*/
-    /*border-right: 2vw solid;*/
     text-align: center;
     height: 100vh;
     height: 100dvh;
@@ -195,29 +143,14 @@ video {
 }
 
 .hide {
-    /*visibility: hidden;*/
-    /*opacity: 0;*/
-    /*transition: visibility 0s 2s, opacity 2s linear;*/
     animation-name:fadeOut;
     animation-duration:2s;
     animation-fill-mode: forwards; /* added */
     display: block;
-    /*!*visibility: hidden;*/
 }
 
 @keyframes fadeOut {
     0% { opacity: 1;}
     80% { opacity: 0.01;width: 100%; height: 100%;}
     100% { opacity: 0;width: 0; height: 0;}
-
-    /*from {*/
-    /*    opacity: 1;*/
-    /*    !*margin-left: 0%;*!*/
-    /*}*/
-
-    /*to {*/
-    /*    opacity: 0;*/
-    /*    !*margin-left: -100%;*!*/
-    /*    height: 0; !* added *!*/
-    /*}*/
 }

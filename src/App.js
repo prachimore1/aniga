@@ -13,6 +13,7 @@ import mala2 from "./images/elements/mala2.png";
 import mala3 from "./images/elements/mala3.png";
 import hangingFlower1 from "./images/elements/hangingFlower1.png";
 import hangingFlower2 from "./images/elements/hangingFlower2.png";
+import bell from "./images/elements/bell.png";
 
 AOS.init();
 AOS.init({
@@ -87,6 +88,16 @@ function Invite() {
                     <img src={mala2} alt="" className="mala mala2"/>
                     <img src={mala3} alt="" className="mala mala3"/>
                 </div>
+                <div className="background layer3"
+                     data-aos="fade-in"
+                     data-aos-easing="ease-in"
+                    // data-aos-anchor-placement="top-bottom"
+                     data-aos-delay="500"
+                     data-aos-duration="1000"
+                >
+                    <img src={bell} alt="" className="bell bell1"/>
+                    <img src={bell} alt="" className="bell bell2"/>
+                </div>
                 <div className="background layer2"
                      data-aos="fade-in"
                      data-aos-easing="ease-in"
@@ -97,6 +108,7 @@ function Invite() {
                     <img src={hangingFlower1} alt="" className="hangingFlower hF1"/>
                     <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>
                 </div>
+
             </div>
             <div className="foreground"
                  data-aos="slide-up"
