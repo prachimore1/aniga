@@ -92,8 +92,8 @@ function Invite() {
                      data-aos-offset="200"
                      data-aos-duration="2000"
                      data-aos-anchor-placement="top-bottom">
-                    <img src={hangingFlower1} alt="" className="hangingFlower"/>
-                    <img src={hangingFlower2} alt="" className="hangingFlower"/>
+                    <img src={hangingFlower1} alt="" className="hangingFlower hF1"/>
+                    <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>
                 </div>
             </div>
             <div className="foreground"
