@@ -14,6 +14,7 @@ import mala3 from "./images/elements/mala3.png";
 import hangingFlower1 from "./images/elements/hangingFlower1.png";
 import hangingFlower2 from "./images/elements/hangingFlower2.png";
 import bell from "./images/elements/bell.png";
+import leaf1 from "./images/elements/leaf1.png";
 
 AOS.init();
 AOS.init({
@@ -43,7 +44,7 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {textDisplay: false};
+        this.state = {textDisplay: true};
         this.transitionContext = this.transitionContext.bind(this);
     }
 
@@ -79,10 +80,10 @@ function Invite() {
         <div className="invite">
             <div className="animatedBackground">
                 <div className="background"
-                     data-aos="slide-up"
-                     data-aos-offset="200"
-                     data-aos-duration="2000"
-                     data-aos-anchor-placement="top-bottom"
+                     data-aos="fade-in"
+                     data-aos-easing="ease-in"
+                     data-aos-delay="500"
+                     data-aos-duration="1000"
                 >
                     <img src={mala1} alt="" className="mala mala1"/>
                     <img src={mala2} alt="" className="mala mala2"/>
@@ -91,7 +92,6 @@ function Invite() {
                 <div className="background layer2"
                      data-aos="fade-in"
                      data-aos-easing="ease-in"
-                    // data-aos-anchor-placement="top-bottom"
                      data-aos-delay="500"
                      data-aos-duration="1000"
                 >
@@ -101,7 +101,6 @@ function Invite() {
                 <div className="background layer3"
                      data-aos="fade-in"
                      data-aos-easing="ease-in"
-                     // data-aos-anchor-placement="top-bottom"
                      data-aos-delay="500"
                      data-aos-duration="1000"
                 >
@@ -114,7 +113,8 @@ function Invite() {
                     data-aos-duration="2000"
                     data-aos-anchor-placement="top-bottom"
                 >
-                    <p>Footer</p>
+                    {/*<p>Footer</p>*/}
+                    <img src={leaf1} alt="" className="leaf leaf1"/>
                 </div>
             </div>
             <div className="foreground"

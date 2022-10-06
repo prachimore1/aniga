@@ -100,12 +100,20 @@ video {
 .bell2 { animation-duration: 3.25s; padding-left: 27vw}
 
 .footerBackground {
-    /*position: fixed;*/
+    position: absolute;
+    overflow-x: hidden;
     width: 100%;
-    height: 9vw;
+    top: 66vh;
     background-color: red;
     color: white;
     text-align: center;
+}
+
+.leaf1 {
+    /*height: 30vw;*/
+    width: 100vw;
+    margin-left: -173px;
+    padding-top: 50px;
 }
 
 .content {
