@@ -88,10 +88,12 @@ function Invite() {
                     <img src={mala3} alt="" className="mala mala3"/>
                 </div>
                 <div className="background layer2"
-                     data-aos="slide-up"
-                     data-aos-offset="200"
-                     data-aos-duration="2000"
-                     data-aos-anchor-placement="top-bottom">
+                     data-aos="fade-in"
+                     data-aos-easing="ease-in"
+                     // data-aos-anchor-placement="top-bottom"
+                     data-aos-delay="500"
+                     data-aos-duration="1000"
+                >
                     <img src={hangingFlower1} alt="" className="hangingFlower hF1"/>
                     <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>
                 </div>
