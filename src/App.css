@@ -93,7 +93,7 @@ video {
 .bell {
     height: 10vw;
     padding-left: 26vw;
-    animation: malaSway 1s ease-in-out infinite alternate;
+    animation: bellsSway 1s ease-in infinite alternate;
 }
 .bell1 { animation-duration: 2s; }
 .bell2 { animation-duration: 1.5s; }
@@ -142,6 +142,10 @@ video {
     to{transform:translateX(4px) rotate(-0.5deg);}
 }
 
+@keyframes bellsSway{
+    from{transform:translateX(-4px) rotate(2deg); transform-origin: top center;}
+    to{transform:translateX(4px) rotate(-2deg); transform-origin: top center;}
+}
 @keyframes flowersSway{
     from{transform: rotate(2deg); transform-origin: top center;}
     to{transform:  rotate(-2deg); transform-origin: top center;}
