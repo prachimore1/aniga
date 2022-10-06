@@ -58,7 +58,7 @@ video {
     /*z-index: -1;*/
     width: 100vw;
     width: 100dvw;
-    height: 10vh;
+    height: 9vh;
     /*height: 100dvh;*/
     object-fit: contain;
     max-width: 100vh;
@@ -70,19 +70,34 @@ video {
     overflow-x: hidden;
     width: 100%;
     justify-content: space-between;
+    margin-top: -15px;
 }
 
-@keyframes sway {
-    0%   {transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%);}
-    5%   {transform: translateX(0.2px) translateY(0px) scaleX(100%) scaleY(100.2%);}
-    10%   {transform: translateX(0.4px) translateY(0px) scaleX(100%) scaleY(100.4%);}
-    15%   {transform: translateX(0.6px) translateY(0px) scaleX(100%) scaleY(100.6%);}
-    20%   {transform: translateX(0.8px) translateY(0px) scaleX(100%) scaleY(100.8%);}
-    25%  {transform: translateX(1px) translateY(-1px) scaleX(100%) scaleY(101%)}
-    50%  {transform: translateX(0px) translateY(0px) scaleX(101%) scaleY(100%)}
-    75%  {transform: translateX(-1px) translateY(1px) scaleX(100%) scaleY(101%)}
-    100% {transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%);}
-}
+/*@keyframes sway {*/
+/*    from {*/
+/*        transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%) rotateX(0deg);*/
+/*    }*/
+/*    25%  {*/
+/*        transform: translateX(1px) translateY(-1px) scaleX(100%) scaleY(101%) rotateX(5deg)*/
+/*    }*/
+/*    50%  {*/
+/*        transform: translateX(0px) translateY(0px) scaleX(101%) scaleY(100%)*/
+/*    }*/
+/*    75%  {*/
+/*        transform: translateX(-1px) translateY(1px) scaleX(100%) scaleY(101%)*/
+/*    }*/
+/*    to {*/
+/*        transform: translateX(0px) translateY(0px) scaleX(100%) scaleY(100%)*/
+/*    }*/
+/*    !*0%   {transform: translate(0px ,0px) scaleX(100%) scaleY(100%) rotateX(0deg);}*!*/
+/*    !*5%   {transform: translate(0.2px ,0px) scaleX(100%) scaleY(100.2%) rotateX(1deg);}*!*/
+/*    !*10%   {transform: translate(0.4px ,0px) scaleX(100%) scaleY(100.4%) rotateX(2deg);}*!*/
+/*    !*15%   {transform: translate(0.6px ,0px) scaleX(100%) scaleY(100.6%) rotateX(3deg);}*!*/
+/*    !*20%   {transform: translate(0.8px ,0px) scaleX(100%) scaleY(100.8%) rotateX(4deg);}*!*/
+/*    !*25%  {transform: translate(1px ,-1px) scaleX(100%) scaleY(101%) rotateX(5deg)}*!*/
+/*    !*75%  {transform: translate(-1px ,1px) scaleX(100%) scaleY(101%)}*!*/
+/*    !*100% {transform: translate(0px ,0px) scaleX(100%) scaleY(100%);}*!*/
+/*}*/
 
 .mala {
     /*height: 25vh;*/
@@ -99,12 +114,25 @@ video {
     width: 100%;
     aspect-ratio: 1 / 1;
     margin-left: -5vw;
-    animation-name: sway;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    /*animation-name: sway;*/
+    /*animation-duration: 4s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation: sway 4s steps(20) infinite alternate;*/
+    animation: sway2 1s ease-in infinite alternate;
 }
-
-
+@keyframes sway2{
+    from{transform:translateX(-4px) rotate(1deg);}
+    to{transform:translateX(4px) rotate(-1deg);}
+}
+.mala1 {
+    animation-duration: 1.5s
+}
+.mala2 {
+    animation-duration: 2.5s
+}
+.mala3 {
+    animation-duration: 3s
+}
 .invite {
     /*display: grid;*/
     /*height: 100%;*/

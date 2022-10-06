@@ -81,8 +81,8 @@ function Invite() {
                  data-aos-anchor-placement="top-bottom"
             >
                 <img src={mala1} alt="" className="mala mala1"/>
-                <img src={mala1} alt="" className="mala mala2"/>
-                <img src={mala1} alt="" className="mala mala2"/>
+                <img src={mala2} alt="" className="mala mala2"/>
+                <img src={mala3} alt="" className="mala mala3"/>
                 {/*<img src={mala3} alt="" className="mala mala3"/>*/}
             </div>
             <div className="foreground"
