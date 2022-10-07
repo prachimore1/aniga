@@ -14,6 +14,9 @@ import mala3 from "./images/elements/mala3.png";
 import hangingFlower1 from "./images/elements/hangingFlower1.png";
 import hangingFlower2 from "./images/elements/hangingFlower2.png";
 import bell from "./images/elements/bell.png";
+import leaf1 from "./images/elements/leaf1.png";
+import leaf2 from "./images/elements/leaf2.png";
+import leaf3 from "./images/elements/leaf3.png";
 
 AOS.init();
 AOS.init({
@@ -43,7 +46,7 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {textDisplay: false};
+        this.state = {textDisplay: true};
         this.transitionContext = this.transitionContext.bind(this);
     }
 
@@ -92,7 +95,9 @@ function Invite() {
                     <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>
                 </div>
                 <div className="footerBackground">
-                    <p>Footer</p>
+                    <img src={leaf1} alt="" className="leaf leaf1"/>
+                    <img src={leaf2} alt="" className="leaf leaf2"/>
+                    <img src={leaf3} alt="" className="leaf leaf3"/>
                 </div>
             </div>
             <div className="foreground"
