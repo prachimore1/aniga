@@ -102,18 +102,38 @@ video {
 .footerBackground {
     position: absolute;
     overflow-x: hidden;
+    display: flex;
     width: 100%;
-    top: 66vh;
     background-color: red;
     color: white;
     text-align: center;
+    top: 56vh;
+    height: 44vh;
 }
-
+.leaf {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    width: 100%;
+}
 .leaf1 {
-    /*height: 30vw;*/
-    width: 100vw;
-    margin-left: -173px;
-    padding-top: 50px;
+    height: 52vh;
+    padding-top: 7vh;
+    width: 33vw;
+    z-index: -2;
+}
+.leaf3 {
+    padding-top: 16vh;
+    margin-left: -16vw;
+    width: 45vw;
+
+}
+.leaf2 {
+    width: 51vw;
+    padding-top: 11vh;
+    height: 52vh;
+    transform: rotate(20deg);
+    margin-left: -55vw;
+    z-index: -1;
 }
 
 .content {

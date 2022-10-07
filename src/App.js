@@ -15,6 +15,8 @@ import hangingFlower1 from "./images/elements/hangingFlower1.png";
 import hangingFlower2 from "./images/elements/hangingFlower2.png";
 import bell from "./images/elements/bell.png";
 import leaf1 from "./images/elements/leaf1.png";
+import leaf2 from "./images/elements/leaf2.png";
+import leaf3 from "./images/elements/leaf3.png";
 
 AOS.init();
 AOS.init({
@@ -113,8 +115,9 @@ function Invite() {
                     data-aos-duration="2000"
                     data-aos-anchor-placement="top-bottom"
                 >
-                    {/*<p>Footer</p>*/}
                     <img src={leaf1} alt="" className="leaf leaf1"/>
+                    <img src={leaf3} alt="" className="leaf leaf3"/>
+                    <img src={leaf2} alt="" className="leaf leaf2"/>
                 </div>
             </div>
             <div className="foreground"
