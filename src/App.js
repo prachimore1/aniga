@@ -17,6 +17,8 @@ import bell from "./images/elements/bell.png";
 import leaf1 from "./images/elements/leaf1.png";
 import leaf2 from "./images/elements/leaf2.png";
 import leaf3 from "./images/elements/leaf3.png";
+import leaf5 from "./images/elements/leaf5.png";
+import leaf6 from "./images/elements/leaf6.png";
 
 AOS.init();
 AOS.init({
@@ -98,6 +100,9 @@ function Invite() {
                     <img src={leaf1} alt="" className="leaf leaf1"/>
                     <img src={leaf2} alt="" className="leaf leaf2"/>
                     <img src={leaf3} alt="" className="leaf leaf3"/>
+                    <img src={leaf1} alt="" className="leaf leaf4"/>
+                    <img src={leaf5} alt="" className="leaf leaf5"/>
+                    <img src={leaf6} alt="" className="leaf leaf6"/>
                 </div>
             </div>
             <div className="foreground"
