@@ -73,9 +73,9 @@ video {
     animation: malaSway 1s ease-in-out infinite alternate;
 }
 
-.mala1 { animation-duration: 3.75s; }
-.mala2 { animation-duration: 2.5s; }
-.mala3 { animation-duration: 3s; }
+.mala1 { animation-duration: 4.75s; }
+.mala2 { animation-duration: 4.5s; }
+.mala3 { animation-duration: 5s; }
 
 .layer3 { height: 24vw; }
 
@@ -85,7 +85,7 @@ video {
     margin-top: -8px;
 }
 
-.hF1 { animation-duration: 2s; }
+.hF1 { animation-duration: 4s; }
 .hF2 { animation-duration: 3.25s; }
 
 .layer2 {
@@ -96,7 +96,7 @@ video {
     padding-left: 26vw;
     animation: bellsSway 1s ease-in infinite alternate;
 }
-.bell1 { animation-duration: 2s;}
+.bell1 { animation-duration: 4s;}
 .bell2 { animation-duration: 3.25s; padding-left: 27vw}
 
 .footerBackground {
@@ -120,12 +120,20 @@ video {
     width: 100%;
 }
 .leaf1 {
+    -webkit-transform-origin: bottom center 10px;
+    transform-origin: bottom center 10px;
+    -webkit-animation: swinging 7s ease-in-out forwards infinite;
+    animation: swinging 7s ease-in-out forwards infinite;
     height: 70vh;
     width: 37vw;
     margin-left: -10vw;
     z-index: -2;
 }
 .leaf2 {
+    -webkit-transform-origin: bottom center 10px;
+    transform-origin: bottom center 10px;
+    -webkit-animation: swinging 8s ease-in-out forwards infinite;
+    animation: swinging 8s ease-in-out alternate infinite;
     transform: rotate(20deg);
     width: 55vw;
     padding-top: 2vh;
@@ -133,6 +141,10 @@ video {
     margin-left: -27vw;
 }
 .leaf3 {
+    -webkit-transform-origin: bottom center 10px;
+    transform-origin: bottom center 10px;
+    -webkit-animation: swinging 7.5s ease-in-out forwards infinite;
+    animation: swinging 7.5s ease-in-out alternate infinite;
     width: 51vw;
     z-index: -1;
     padding-top: 11vh;
@@ -178,18 +190,30 @@ video {
     /*display: block;*/
 }
 
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(-1deg);}
+    50%{-webkit-transform: rotate(1deg)}
+    100%{-webkit-transform: rotate(-1deg);}
+}
+
+@keyframes swinging{
+    0%{transform: rotate(-1deg);}
+    50%{transform: rotate(1deg)}
+    100%{transform: rotate(-1deg);}
+}
+
 @keyframes malaSway{
-    from{transform:translateX(-4px) rotate(0.5deg);}
-    to{transform:translateX(4px) rotate(-0.5deg);}
+    from{transform:translateX(-1px) rotate(0.5deg);}
+    to{transform:translateX(1px) rotate(-0.5deg);}
 }
 
 @keyframes bellsSway{
-    from{transform:translateX(-4px) rotate(3deg); transform-origin: top center;}
-    to{transform:translateX(4px) rotate(-3deg); transform-origin: top center;}
+    from{transform:translateX(-1px) rotate(1deg); transform-origin: top center;}
+    to{transform:translateX(1px) rotate(-1deg); transform-origin: top center;}
 }
 @keyframes flowersSway{
-    from{transform: rotate(2deg); transform-origin: top center;}
-    to{transform:  rotate(-2deg); transform-origin: top center;}
+    from{transform: rotate(1.5deg); transform-origin: top center;}
+    to{transform:  rotate(-1.5deg); transform-origin: top center;}
 }
 
 @keyframes fadeOut {
