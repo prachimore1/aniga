@@ -13,7 +13,6 @@ html {
     scroll-snap-type: y mandatory;
     perspective: 1000px;
     background-repeat: no-repeat;
-    position: fixed;
     height: 100vh;
     height: 100dvh;
     width: 100vw;
@@ -61,6 +60,7 @@ video {
     /*justify-content: space-between;*/
     margin-top: -4px;
     height: 19vw;
+    animation: fadeIn 2s ease-in;
 }
 
 .mala {
@@ -100,12 +100,16 @@ video {
 .bell2 { animation-duration: 3.25s; padding-left: 27vw}
 
 .footerBackground {
-    /*position: fixed;*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
     height: 9vw;
     background-color: red;
     color: white;
     text-align: center;
+    z-index: 5;
+    animation: fadeIn 2s ease-in;
 }
 
 .content {
@@ -144,7 +148,7 @@ video {
     animation-name:fadeOut;
     animation-duration:2s;
     animation-fill-mode: forwards; /* added */
-    display: block;
+    /*display: block;*/
 }
 
 @keyframes malaSway{
@@ -163,6 +167,10 @@ video {
 
 @keyframes fadeOut {
     0% { opacity: 1;}
-    80% { opacity: 0.01;width: 100%; height: 100%;}
+    50% { opacity: 0.01;width: 100%; height: 50%;}
     100% { opacity: 0;width: 0; height: 0;}
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

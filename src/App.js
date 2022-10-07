@@ -78,42 +78,20 @@ function Invite() {
     return (
         <div className="invite">
             <div className="animatedBackground">
-                <div className="background"
-                     data-aos="slide-up"
-                     data-aos-offset="200"
-                     data-aos-duration="2000"
-                     data-aos-anchor-placement="top-bottom"
-                >
+                <div className="background">
                     <img src={mala1} alt="" className="mala mala1"/>
                     <img src={mala2} alt="" className="mala mala2"/>
                     <img src={mala3} alt="" className="mala mala3"/>
                 </div>
-                <div className="background layer2"
-                     data-aos="fade-in"
-                     data-aos-easing="ease-in"
-                    // data-aos-anchor-placement="top-bottom"
-                     data-aos-delay="500"
-                     data-aos-duration="1000"
-                >
+                <div className="background layer2">
                     <img src={bell} alt="" className="bell bell1"/>
                     <img src={bell} alt="" className="bell bell2"/>
                 </div>
-                <div className="background layer3"
-                     data-aos="fade-in"
-                     data-aos-easing="ease-in"
-                     // data-aos-anchor-placement="top-bottom"
-                     data-aos-delay="500"
-                     data-aos-duration="1000"
-                >
+                <div className="background layer3">
                     <img src={hangingFlower1} alt="" className="hangingFlower hF1"/>
                     <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>
                 </div>
-                <div className="footerBackground"
-                    data-aos="slide-up"
-                    data-aos-offset="200"
-                    data-aos-duration="2000"
-                    data-aos-anchor-placement="top-bottom"
-                >
+                <div className="footerBackground">
                     <p>Footer</p>
                 </div>
             </div>
