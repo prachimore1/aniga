@@ -8,6 +8,7 @@ import videoCover from "./videos/Cover.mp4";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import thoran from "./images/thoran.png";
+import background3 from "./images/background3.png";
 import mala1 from "./images/elements/mala1.png";
 import mala2 from "./images/elements/mala2.png";
 import mala3 from "./images/elements/mala3.png";
@@ -19,6 +20,7 @@ import leaf2 from "./images/elements/leaf2.png";
 import leaf3 from "./images/elements/leaf3.png";
 import leaf5 from "./images/elements/leaf5.png";
 import leaf6 from "./images/elements/leaf6.png";
+
 
 AOS.init();
 AOS.init({
@@ -83,6 +85,7 @@ function Invite() {
     return (
         <div className="invite">
             <div className="animatedBackground">
+                <img src={background3} alt="" className="coloredBackground"/>
                 <div className="background">
                     <img src={mala1} alt="" className="mala mala1"/>
                     <img src={mala2} alt="" className="mala mala2"/>
