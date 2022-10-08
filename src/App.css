@@ -211,11 +211,12 @@ video {
     width: 100vw;
     scroll-snap-align: center;
     transform-style: preserve-3d;
-    padding-top: 18vh;
+    /*padding-top: 18vh;*/
     display:table;
 }
 
 .content * {
+    padding-top: 18vh;
     width: 100vw;
     text-align: center;
 }
