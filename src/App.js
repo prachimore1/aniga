@@ -51,7 +51,7 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {textDisplay: true};
+        this.state = {textDisplay: false};
         this.transitionContext = this.transitionContext.bind(this);
     }
 
