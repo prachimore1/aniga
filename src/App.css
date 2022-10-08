@@ -11,6 +11,7 @@ html {
 .coloredBackground {
     height: 100vh;
     width: 100vw;
+    animation: fadeIn 2s ease-in;
 }
 .foreground {
     overflow-y: scroll;
@@ -107,7 +108,7 @@ video {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 70vw;
+    height: 35vh;
     /*background-color: red;*/
     color: white;
     text-align: center;
@@ -196,9 +197,13 @@ video {
     width: 100vw;
     scroll-snap-align: center;
     transform-style: preserve-3d;
-    padding-top: 20vh;
+    padding-top: 18vh;
 }
 
+.content * {
+    width: 100vw;
+    text-align: center;
+}
 .viewButton {
     position:absolute;
     left: 50%;
@@ -219,6 +224,7 @@ video {
 .room-content {
     text-align: center;
 }
+
 
 .hide {
     animation-name:fadeOut;
