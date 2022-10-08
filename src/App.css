@@ -211,6 +211,8 @@ video {
     transform-style: preserve-3d;
     /*padding-top: 18vh;*/
     display:table;
+    /*border-bottom: 2px solid ;*/
+    /*border-top: 2px solid ;*/
 }
 
 .content * {
