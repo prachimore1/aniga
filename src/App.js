@@ -69,13 +69,6 @@ class App extends React.Component {
                         >
                         <source src={videoCover} type="video/mp4"/>
                     </video>
-                    <div className={this.state.textDisplay ? 'hide coverBackground' : 'coverBackground'}>
-                        <section className="content">
-                            <div className="introduction first">Nashik</div>
-                            <div className="introduction second">13-14 Dec</div>
-                            <div className="introduction third">Grape County</div>
-                        </section>
-                    </div>
                 </div>
                 {this.state.textDisplay &&
                     <Invite/>
@@ -120,6 +113,7 @@ function Invite() {
             >
 
                 <section className="content">
+                    {/*<h2 className="room-content">Section 1</h2>*/}
                     <img src={PC1} alt="" className="one"/>
                 </section>
 
