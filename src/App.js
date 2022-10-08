@@ -65,12 +65,15 @@ class App extends React.Component {
                 <div id="cover" className={this.state.textDisplay ? 'hide' : ''}>
                     <video playsInline autoPlay muted
                            className={this.state.textDisplay ? 'hide' : ''}
-                           onEnded={this.transitionContext}>
+                           onEnded={this.transitionContext}
+                        >
                         <source src={videoCover} type="video/mp4"/>
                     </video>
                     <div className={this.state.textDisplay ? 'hide coverBackground' : 'coverBackground'}>
                         <section className="content">
-                            <h1>Introduction</h1>
+                            <div className="introduction first">Nashik</div>
+                            <div className="introduction second">13-14 Dec</div>
+                            <div className="introduction third">Grape County</div>
                         </section>
                     </div>
                 </div>
