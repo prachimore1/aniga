@@ -83,16 +83,16 @@ function Invite() {
         <div className="invite">
             <div className="animatedBackground">
                 <img src={background3} alt="" className="coloredBackground"/>
-                <div className="background">
+                <div className="background malaLayer">
                     <img src={mala1} alt="" className="mala mala1"/>
                     <img src={mala2} alt="" className="mala mala2"/>
                     <img src={mala3} alt="" className="mala mala3"/>
                 </div>
-                <div className="background layer2">
+                <div className="background bellsLayer">
                     <img src={bell} alt="" className="bell bell1"/>
                     <img src={bell} alt="" className="bell bell2"/>
                 </div>
-                <div className="background layer3">
+                <div className="background hangingFlowerLayer">
                     <img src={hangingFlower1} alt="" className="hangingFlower hF1"/>
                     <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>
                 </div>
