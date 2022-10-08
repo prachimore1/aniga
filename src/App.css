@@ -198,6 +198,7 @@ video {
     scroll-snap-align: center;
     transform-style: preserve-3d;
     padding-top: 18vh;
+    display:table;
 }
 
 .content * {
@@ -223,6 +224,8 @@ video {
 
 .room-content {
     text-align: center;
+    display:table-cell;
+    vertical-align:middle
 }
 
 

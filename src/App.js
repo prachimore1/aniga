@@ -51,7 +51,7 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {textDisplay: false};
+        this.state = {textDisplay: true};
         this.transitionContext = this.transitionContext.bind(this);
     }
 
@@ -121,27 +121,12 @@ function Invite() {
                 </section>
 
                 <section className="content">
-                    <button className="viewButton">View</button>
+                    <h2 className="room-content">Section 2</h2>
+                    {/*<button className="viewButton">View</button>*/}
                 </section>
 
                 <section className="content">
-                    <p className="room-content">Section 3</p>
-                </section>
-
-                <section className="content">
-                    <p className="room-content">Section 4</p>
-                </section>
-
-                <section className="content">
-                    <p className="room-content">Section 5</p>
-                </section>
-
-                <section className="content">
-                    <p className="room-content">Section 6</p>
-                </section>
-
-                <section className="content">
-                    <p className="room-content">Section 7</p>
+                    <h2 className="room-content">Section 3</h2>
                 </section>
             </div>
         </div>
