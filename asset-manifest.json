@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/aniga/static/css/main.73d4379f.css",
-    "main.js": "/aniga/static/js/main.b3316c5c.js",
+    "main.css": "/aniga/static/css/main.866548ac.css",
+    "main.js": "/aniga/static/js/main.eadf03c9.js",
     "static/js/787.0d062425.chunk.js": "/aniga/static/js/787.0d062425.chunk.js",
     "static/media/Cover.mp4": "/aniga/static/media/Cover.513ec78097deb275d9fc.mp4",
     "static/media/background3.png": "/aniga/static/media/background3.f7428b58d400a7824fa0.png",
+    "static/media/leaf6.png": "/aniga/static/media/leaf6.3db789ac4eaf6c26ea4a.png",
+    "static/media/leaf3.png": "/aniga/static/media/leaf3.ed282d87fbf3f84cd478.png",
+    "static/media/leaf5.png": "/aniga/static/media/leaf5.6f768e3ef977d4cfe3a6.png",
+    "static/media/leaf1.png": "/aniga/static/media/leaf1.3dcd6f2035efe35958bd.png",
+    "static/media/leaf2.png": "/aniga/static/media/leaf2.21c4b04cf25c45b26e4e.png",
     "static/media/mala1.png": "/aniga/static/media/mala1.e804c7b1fbbfe210a750.png",
     "static/media/mala3.png": "/aniga/static/media/mala3.f99e1be00b6b575939d6.png",
     "static/media/mala2.png": "/aniga/static/media/mala2.6a83da2defbabdc3556c.png",
     "static/media/hangingFlower1.png": "/aniga/static/media/hangingFlower1.e356c64e825b0d7abe46.png",
     "static/media/hangingFlower2.png": "/aniga/static/media/hangingFlower2.b2cf83a9e9efc8d55ecd.png",
     "index.html": "/aniga/index.html",
-    "main.73d4379f.css.map": "/aniga/static/css/main.73d4379f.css.map",
-    "main.b3316c5c.js.map": "/aniga/static/js/main.b3316c5c.js.map",
+    "main.866548ac.css.map": "/aniga/static/css/main.866548ac.css.map",
+    "main.eadf03c9.js.map": "/aniga/static/js/main.eadf03c9.js.map",
     "787.0d062425.chunk.js.map": "/aniga/static/js/787.0d062425.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73d4379f.css",
-    "static/js/main.b3316c5c.js"
+    "static/css/main.866548ac.css",
+    "static/js/main.eadf03c9.js"
   ]
 }
