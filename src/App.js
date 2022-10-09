@@ -2,11 +2,12 @@ import './App.css';
 import React from 'react';
 import videoCover from "./videos/Cover.mp4";
 import background3 from "./images/background3.png";
+import toran from './images/Toran.png';
 import mala1 from "./images/elements/mala1.png";
 import mala2 from "./images/elements/mala2.png";
 import mala3 from "./images/elements/mala3.png";
-import hangingFlower1 from "./images/elements/hangingFlower1.png";
-import hangingFlower2 from "./images/elements/hangingFlower2.png";
+// import hangingFlower1 from "./images/elements/hangingFlower1.png";
+// import hangingFlower2 from "./images/elements/hangingFlower2.png";
 import leaf1 from "./images/elements/leaf1.png";
 import leaf2 from "./images/elements/leaf2.png";
 import leaf3 from "./images/elements/leaf3.png";
@@ -47,15 +48,16 @@ function Invite() {
         <div className="invite">
             <img src={background3} alt="" className="coloredBackground"/>
             <div className="animatedBackground">
-                <div className="malaLayer">
-                    <img src={mala1} alt="" className="mala mala1"/>
-                    <img src={mala2} alt="" className="mala mala2"/>
-                    <img src={mala3} alt="" className="mala mala3"/>
-                </div>
-                <div className="hangingFlowerLayer">
-                    <img src={hangingFlower1} alt="" className="hangingFlower hF1"/>
-                    <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>
-                </div>
+                <img src={toran} alt="" className="malaLayer"/>
+                {/*<div className="malaLayer">*/}
+                {/*    <img src={mala1} alt="" className="mala mala1"/>*/}
+                {/*    <img src={mala2} alt="" className="mala mala2"/>*/}
+                {/*    /!*<img src={mala3} alt="" className="mala mala3"/>*!/*/}
+                {/*</div>*/}
+                {/*<div className="hangingFlowerLayer">*/}
+                {/*    <img src={hangingFlower1} alt="" className="hangingFlower hF1"/>*/}
+                {/*    <img src={hangingFlower2} alt="" className="hangingFlower hF2"/>*/}
+                {/*</div>*/}
                 <div className="footerBackground">
                     <img src={leaf1} alt="" className="leaf leaf1"/>
                     <img src={leaf2} alt="" className="leaf leaf2"/>

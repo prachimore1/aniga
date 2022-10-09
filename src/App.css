@@ -38,71 +38,29 @@
     overflow-x: hidden;
 }
 .malaLayer {
-    z-index: -5;
-    position: fixed;
-    /*height: auto;*/
+    width: 100%;
 }
-.mala {
-    overflow: hidden;
-    width: 42.3%;
-    height: 100%;
-    animation: malaSway 1s ease-in-out infinite alternate;
-}
-.mala1 {
-    position: relative;
-    margin-left: -3vw;
-    animation-duration: 4.75s;
-}
-.mala2 {
-    position: absolute;
-    left: 29vw;
-    animation-duration: 4.5s;
-}
-.mala3 {
-    position: absolute;
-    left: 64vw;
-    animation-duration: 5s;
-}
-.hangingFlowerLayer {
-    z-index: -4;
-    position: fixed;
-    width: auto;
-    height: 100%;
-}
-.hangingFlower {
-    height: 17vh;
-    position: relative;
-    animation: flowersSway 1s ease-in-out infinite alternate;
-}
-.hF1 {
-    left: 28vw;
-    animation-duration: 4s;
-}
-.hF2 {
-    left: 44vw;
-    animation-duration: 3.25s;
-}
-
 .footerBackground {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 35vh;
+    max-width: 100%;
+    height: 45vh;
     /*background-color: red;*/
-    color: white;
-    text-align: center;
+    /*color: white;*/
+    /*text-align: center;*/
     z-index: 5;
     animation: fadeIn 2s ease-in;
     display: flex;
-    object-fit: contain;
-    overflow: hidden;
+    /*object-fit: cover;*/
+    /*overflow: hidden;*/
     /*overflow-x: hidden;*/
 }
 .leaf {
     aspect-ratio: 1 / 1;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 .leaf1 {
     -webkit-transform-origin: bottom center 10px;
@@ -134,7 +92,7 @@
     z-index: -1;
     padding-top: 11vh;
     margin-left: -51vw;
-    height: 74vw;
+    height: 74vh;
 }
 .leaf4 {
     -webkit-transform-origin: bottom center 10px;
@@ -144,18 +102,18 @@
     /*transform: rotate(36deg);*/
     z-index: -2;
     width: 46vw;
-    margin-left: -23vw;
-    padding-top: 21vw;
-    height: 102vw;
+    margin-left: -33vw;
+    padding-top: 10vh;
+    height: 102vh;
 }
 .leaf5 {
     -webkit-transform-origin: bottom center 10px;
     transform-origin: bottom center 10px;
     -webkit-animation: swinging 7.88s ease-in-out forwards infinite;
     animation: swinging 7.88s ease-in-out forwards infinite;
-    height: 80vw;
+    height: 80vh;
     width: 42vw;
-    margin-left: -20vw;
+    margin-left: -10vw;
     padding-top: 4vh;
 }
 .leaf6 {
@@ -169,6 +127,58 @@
     padding-top: 2vh;
     z-index: -1;
 }
+/*.malaLayer {*/
+/*    z-index: -5;*/
+/*    position: fixed;*/
+/*    !*height: auto;*!*/
+/*    width: 100%;*/
+/*}*/
+/*.mala {*/
+/*    overflow: hidden;*/
+/*    height: 30vh;*/
+/*    animation: malaSway 1s ease-in-out infinite alternate;*/
+/*    !*width: 33.3vw;*!*/
+/*    --mala-width: 40.3vw;*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*}*/
+/*.mala1 {*/
+/*    margin-left: -3vw;*/
+/*    animation-duration: 4.75s;*/
+/*    grid-column: 4 / -1;*/
+/*    grid-row: 1;*/
+/*}*/
+/*.mala2 {*/
+/*    !*left: var(--mala-width);*!*/
+/*    animation-duration: 4.5s;*/
+/*    grid-row: 1;*/
+/*    grid-column: 1 / span 8;*/
+/*    padding-top: 20%;*/
+/*z-index: 1;*/
+/*}*/
+/*.mala3 {*/
+/*    !*left: calc(2* var(--mala-width));*!*/
+/*    animation-duration: 5s;*/
+/*}*/
+/*.hangingFlowerLayer {*/
+/*    z-index: -4;*/
+/*    position: fixed;*/
+/*    width: auto;*/
+/*    height: 100%;*/
+/*}*/
+/*.hangingFlower {*/
+/*    height: 17vh;*/
+/*    position: relative;*/
+/*    animation: flowersSway 1s ease-in-out infinite alternate;*/
+/*}*/
+/*.hF1 {*/
+/*    left: 28vw;*/
+/*    animation-duration: 4s;*/
+/*}*/
+/*.hF2 {*/
+/*    left: 44vw;*/
+/*    animation-duration: 3.25s;*/
+/*}*/
 @keyframes slideUp {
     from {
         opacity: 0;
