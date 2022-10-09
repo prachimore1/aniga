@@ -13,11 +13,12 @@ import leaf2 from "./images/elements/leaf2.png";
 import leaf3 from "./images/elements/leaf3.png";
 import leaf5 from "./images/elements/leaf5.png";
 import leaf6 from "./images/elements/leaf6.png";
+import PC1 from "./images/PageContent1.PNG";
 
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {textDisplay: false};
+        this.state = {textDisplay: true};
         this.transitionContext = this.transitionContext.bind(this);
     }
 
@@ -49,6 +50,7 @@ function Invite() {
             <img src={background3} alt="" className="coloredBackground"/>
             <div className="animatedBackground">
                 <img src={toran} alt="" className="malaLayer"/>
+                <img src={PC1} alt="" className="PC1"/>
                 {/*<div className="malaLayer">*/}
                 {/*    <img src={mala1} alt="" className="mala mala1"/>*/}
                 {/*    <img src={mala2} alt="" className="mala mala2"/>*/}
@@ -67,6 +69,21 @@ function Invite() {
                     <img src={leaf6} alt="" className="leaf leaf6"/>
                 </div>
             </div>
+            {/*<div className="foreground">*/}
+            {/*    <section className="content">*/}
+            {/*        <h2 className="room-content">Section 1</h2>*/}
+            {/*        /!*<img src={PC1} alt="" className="one"/>*!/*/}
+            {/*    </section>*/}
+
+            {/*    <section className="content">*/}
+            {/*        <h2 className="room-content">Section 2</h2>*/}
+            {/*        /!*<button className="viewButton">View</button>*!/*/}
+            {/*    </section>*/}
+
+            {/*    <section className="content">*/}
+            {/*        <h2 className="room-content">Section 3</h2>*/}
+            {/*    </section>*/}
+            {/*</div>*/}
         </div>
     )
 }
