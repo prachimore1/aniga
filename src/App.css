@@ -1,296 +1,84 @@
-
 .App {
-    transform-style: preserve-3d;
-}
-html {
-    height: 100vh;
-    height: 100dvh;
     overflow: hidden;
-}
-
-.coloredBackground {
-    height: 100vh;
-    width: 100vw;
-    animation: fadeIn 2s ease-in;
-}
-.foreground {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    perspective: 1000px;
-    background-repeat: no-repeat;
     height: 100vh;
     height: 100dvh;
-    width: 100vw;
 }
-.animatedBackground {
-    width: 100vw;
-    width: 100dvw;
-    display: flex;
-    position: absolute;
-    height: 23vh;
-}
-.coverBackground {
-    position: fixed;
-    text-align: center;
-}
-
-video {
-    position: fixed;
-    height: 100vh;
-    height: 100dvh;
+.coverVideo {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    max-width: 100%;
-    animation: fadeIn 2s ease-in;
+    object-position: 50% 50%;
+    animation: fadeIn 1s ease-in;
 }
-.introduction {
-    font: bold 40px Apple Chancery, fantasy;
-    color: aqua;
-}
-.first {
-    animation: slideUp 2s ease-in;
-}
-.second {
-    animation-delay: 4s;
-    animation: slideUp 2s ease-in;
-}
-.third {
-    animation: slideUp 2s ease-in;
-}
-.image-section {
-    flex-grow: 1;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-basis: auto;
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 21vw;
-    /*justify-content: space-between;*/
-    margin-top: -4px;
-    animation: fadeIn 2s ease-in;
-    display: flex;
-    object-fit: contain;
-    overflow: hidden;
-}
-
-.mala {
-    /*top: 0;*/
-    /*float: left;*/
-    height: 100%;
-    /*aspect-ratio: 1 / 1;*/
-    /*height: 19vw;*/
-    margin-left: -5vw;
-    animation: malaSway 1s ease-in-out infinite alternate;
-}
-
-.mala1 { animation-duration: 4.75s; }
-.mala2 { animation-duration: 4.5s; }
-.mala3 { animation-duration: 5s; }
-
-.hangingFlowerLayer { height: 24vw; }
-
-.hangingFlower {
-    height: 27vw;
-    padding-left: 24vw;
-    animation: flowersSway 1s ease-in-out infinite alternate;
-    margin-top: -8px;
-}
-
-.hF1 { animation-duration: 4s; }
-.hF2 { animation-duration: 3.25s; }
-
-.bellsLayer {
-    padding-top: 22vw;
-}
-.bell {
-    height: 10vw;
-    padding-left: 26vw;
-    animation: bellsSway 1s ease-in infinite alternate;
-}
-.bell1 { animation-duration: 4s;}
-.bell2 { animation-duration: 3.25s; padding-left: 27vw}
-
-.footerBackground {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 35vh;
-    /*background-color: red;*/
-    color: white;
-    text-align: center;
-    z-index: 5;
-    animation: fadeIn 2s ease-in;
-    display: flex;
-    object-fit: contain;
-    overflow: hidden;
-    /*overflow-x: hidden;*/
-}
-.leaf {
-    aspect-ratio: 1 / 1;
-    height: 100%;
-    width: 100%;
-}
-.leaf1 {
-    -webkit-transform-origin: bottom center 10px;
-    transform-origin: bottom center 10px;
-    -webkit-animation: swinging 7s ease-in-out forwards infinite;
-    animation: swinging 7s ease-in-out forwards infinite;
-    height: 70vh;
-    width: 37vw;
-    margin-left: -10vw;
-    z-index: -2;
-}
-.leaf2 {
-    -webkit-transform-origin: bottom center 10px;
-    transform-origin: bottom center 10px;
-    -webkit-animation: swinging 8s ease-in-out forwards infinite;
-    animation: swinging 8s ease-in-out alternate infinite;
-    /*transform: rotate(20deg);*/
-    width: 55vw;
-    padding-top: 12vh;
-    height: 55vh;
-    margin-left: -27vw;
-}
-.leaf3 {
-    -webkit-transform-origin: bottom center 10px;
-    transform-origin: bottom center 10px;
-    -webkit-animation: swinging 7.5s ease-in-out forwards infinite;
-    animation: swinging 7.5s ease-in-out alternate infinite;
-    width: 51vw;
-    z-index: -1;
-    padding-top: 11vh;
-    margin-left: -51vw;
-    height: 74vw;
-}
-.leaf4 {
-    -webkit-transform-origin: bottom center 10px;
-    transform-origin: bottom center 10px;
-    -webkit-animation: swinging 7.15s ease-in-out forwards infinite;
-    animation: swinging 7.15s ease-in-out alternate infinite;
-    /*transform: rotate(36deg);*/
-    z-index: -2;
-    width: 46vw;
-    margin-left: -23vw;
-    padding-top: 21vw;
-    height: 102vw;
-}
-.leaf5 {
-    -webkit-transform-origin: bottom center 10px;
-    transform-origin: bottom center 10px;
-    -webkit-animation: swinging 7.88s ease-in-out forwards infinite;
-    animation: swinging 7.88s ease-in-out forwards infinite;
-    height: 80vw;
-    width: 42vw;
-    margin-left: -20vw;
-    padding-top: 4vh;
-}
-.leaf6 {
-    -webkit-transform-origin: bottom center 10px;
-    transform-origin: bottom center 10px;
-    -webkit-animation: swinging 7.5s ease-in-out forwards infinite;
-    animation: swinging 7.5s ease-in-out alternate infinite;
-    margin-left: -27vw;
-    height: 70vh;
-    width: 31vw;
-    padding-top: 2vh;
-    z-index: -1;
-}
-.content {
-    position: relative;
-    text-align: center;
-    height: 100vh;
-    height: 100dvh;
-    width: 100vw;
-    scroll-snap-align: center;
-    transform-style: preserve-3d;
-    /*padding-top: 18vh;*/
-    display:table;
-    /*border-bottom: 2px solid ;*/
-    /*border-top: 2px solid ;*/
-}
-
-.content * {
-    padding-top: 18vh;
-    width: 100vw;
-    text-align: center;
-}
-.viewButton {
-    position:absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    height: 80px;
-    width: 200px;
-    outline: none;
-    border-radius: 50px;
-    border: none;
-    transition: 0.3s all ease;
-    background: #e09bb1;
-    box-shadow:  9px 9px 18px #af798a,
-    -9px -9px 18px #ffbdd8;
-}
-
-.room-content {
-    text-align: center;
-    display:table-cell;
-    vertical-align:middle
-}
-
-
 .hide {
     animation-name:fadeOut;
-    animation-duration:2s;
-    animation-fill-mode: forwards; /* added */
-    /*display: block;*/
+    animation-duration:0.5s;
 }
+/* Main invite */
+.invite {
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid ;
+    border-left: 2px solid ;
+    border-right: 2px solid ;
+    border-top: 2px solid ;
+    position: absolute;
+    top:0;
+    animation: slideUp 2s ease-in;
+}
+.coloredBackground {
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 2s ease-in;
+    z-index: -10;
+}
+.animatedBackground {
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+}
+.malaLayer {
+    z-index: -5;
+    position: fixed;
+}
+.mala {
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+}
+.mala1 {
+    position: relative;
+    margin-left: -3vw;
+}
+.mala2 {
+    position: absolute;
+    left: 29vw;
+}
+.mala3 {
+    position: absolute;
+    left: 64vw;
+}
+.hangingFlowerLayer {
+    z-index: -4;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+}
+.hangingFlower {
+    height: 17vh;
 
-@-webkit-keyframes swinging{
-    0%{-webkit-transform: rotate(-1deg);}
-    50%{-webkit-transform: rotate(1deg)}
-    100%{-webkit-transform: rotate(-1deg);}
+    position: relative;
 }
-
-@keyframes swinging{
-    0%{transform: rotate(-1deg);}
-    50%{transform: rotate(1deg)}
-    100%{transform: rotate(-1deg);}
+.hF1 {
+    left: 28vw;
 }
-
-@keyframes malaSway{
-    from{transform:translateX(-1px) rotate(0.5deg);}
-    to{transform:translateX(1px) rotate(-0.5deg);}
+.hF2 {
+    left: 40vw;
 }
-
-@keyframes bellsSway{
-    from{transform:translateX(-1px) rotate(1deg); transform-origin: top center;}
-    to{transform:translateX(1px) rotate(-1deg); transform-origin: top center;}
-}
-@keyframes flowersSway{
-    from{transform: rotate(1.5deg); transform-origin: top center;}
-    to{transform:  rotate(-1.5deg); transform-origin: top center;}
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1;}
-    50% { opacity: 0.01;width: 100%; height: 50%;}
-    100% { opacity: 0;width: 0; height: 0;}
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(200%);
+        transform: translateY(100%);
         transition: transform 0.5s, opacity 0.5s;
     }
     to {
