@@ -18,7 +18,7 @@ import PC1 from "./images/PageContent1.PNG";
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {textDisplay: true};
+        this.state = {textDisplay: false};
         this.transitionContext = this.transitionContext.bind(this);
     }
 
